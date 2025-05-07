@@ -1,3 +1,4 @@
+
 ```html
 <!DOCTYPE html>
 <html lang="bn">
@@ -47,8 +48,14 @@
       padding: 10px;
     }
     @media (max-width: 600px) {
-      nav ul li {float: none;
+      nav ul li {
+        float: none;
       }
+    }
+    input, textarea {width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -61,29 +68,82 @@
 
   <nav>
     <ul>
-      <li><a href="#services">service</a></li>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#services">services</a></li>
       <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#blog">blog</a></li>
       <li><a href="#contact">contact</a></li>
+      <li><a href="#payment">payment</a></li>
     </ul>
   </nav>
 
+  <section id="home">
+    <h2>Welcome to BuzzPilot</h2>
+    <p>Your trusted digital partner for innovation and design.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>BuzzPilot is a digital platform offering creative solutions for individuals and businesses.</p>
+  </section>
+
   <section id="services">
-    <h2>our services</h2>
+    <h2>Our Services</h2>
     <ul>
       <li>Designed with a user-friendly interface for smooth interaction</li>
       <li>Wireframe and Prototype Development</li>
       <li>Responsive Design with Full Support for Mobile, Tablet, and Desktop Devices</li>
     </ul>
+
+    <h3>4. Backend & Database</h3>
+    <ul>
+      <li>Server setup (Firebase, AWS, etc.)</li>
+      <li>RESTful API or GraphQL development</li><li>Database management (MySQL, MongoDB, PostgreSQL)</li>
+    </ul>
+
+    <h3>5. Testing & Debugging</h3>
+    <ul>
+      <li>Bug fixing</li>
+      <li>User experience testing</li>
+      <li>Performance testing</li>
+    </ul>
+
+    <h3>6. Deployment</h3>
+    <ul>
+      <li>Publishing to Android Play Store and iOS App Store</li>
+      <li>Regular updates and maintenance</li>
+    </ul>
   </section>
 
-  <section id=portfolio>
-    <h2>"portfolio"</h2>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
     <p>Here you can find a showcase of our completed projects.</p>
   </section>
 
+  <section id="blog">
+    <h2>Latest Articles</h2>
+    <p>Stay updated with our insights and digital trends.</p>
+  </section>
+
   <section id="contact">
-    <h2>"Reach out to us"</h2>
-    <p>If you have any questions or suggestions, feel free to contact us.</p>
+    <h2>Reach out to us</h2>
+    <p>If you have any questions or suggestions, feel free to contact us using the form below.</p>
+    <form action="mailto: pilotbuzz345@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+      <input type="submit" value="Send">
+    </form></section>
+
+  <section id="payment">
+    <h2>Make a Payment</h2>
+    <p>You can send your payment via PayPal using the following account number:</p>
+    <p><strong>PayPal Account Number:</strong> 8927576462</p>
+    <p>For secure payments, please confirm the PayPal account before sending.</p>
   </section>
 
   <footer>
@@ -92,4 +152,4 @@
 
 </body>
 </html>
-```
+...
